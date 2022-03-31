@@ -1,0 +1,133 @@
+.header-container {
+    display: flex;
+    z-index: 9;
+    height: 5vh;
+    justify-content: space-between;
+    
+    background-color: #fff;
+}
+
+.nav-options-header-container {
+    background-color: #cfcfcf;
+    position: absolute;
+    margin-top: 5vh;
+}
+
+.image-logo-header {
+    width: 55%;
+    padding-left: .5rem;
+}
+
+.image-container-header {
+    display: grid;
+    align-items: center;
+}
+
+.list-header-container {
+    display: block;
+    list-style: none;
+
+    margin-top: 2vh;
+    
+    text-align: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.text-nav {
+    color: #ffff;
+    font-weight: 700;
+    font-size: 1.15rem;
+
+    margin-top: 1vh;
+}
+
+.button-container-header {
+    display: none;
+}
+
+.button-open-menu {
+    background-color: #fff;
+    border: none;
+    
+    display: grid;
+    align-items: center;
+
+    font-size: 1rem;
+    padding-right: .5rem;
+}
+
+.icon-menu-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width:1050px) {
+    .icon-menu-container {
+        display:none;
+    }
+
+    .button-container-header {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+
+    .button-header {
+        margin-top: .3rem;
+        background-color: #271d47;
+        border: none;
+        border-radius: .9rem;
+        width: 50%;
+        height: 65%;
+        color: #fff;
+        font-weight: 700;
+        font-size: .75rem;
+    }
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+        
+    }
+
+    .nav-options-header-container {
+        display: flex;
+        margin: 0;
+        position: relative;
+        background: none;
+    }
+
+    .list-header-container {
+        display: flex;
+        justify-content: space-between;
+        width: 50vw;
+        height: 100%;
+        margin: 0;
+    }
+
+    .text-nav {
+        color: #000;
+        font-size: 1rem;
+    }
+
+    .text-nav:hover {
+        color: #c1c1c1;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .button-header:hover {
+        background-color: #151027;
+        cursor: pointer;
+        transition: .8s;
+    }
+
+    .image-logo-header {
+        width: 35%;
+    }
+}

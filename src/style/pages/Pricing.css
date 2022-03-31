@@ -1,0 +1,107 @@
+#Pricing {
+    background-color: #fff;
+    display: block;
+}
+
+.main-content-pricing {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.title-pricing {
+    font-size: 1.25rem;
+    color: #000;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.sub-title-pricing {
+    text-align: center;
+    
+    color: #c1c1c1;
+    font-size: .85rem;
+    font-weight: 500;
+
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.grid-pricing-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    gap: 4%;
+}
+
+.princing-container {
+    border-radius: .8rem;
+    border: 1px solid rgb(170, 170, 170);
+    box-shadow: 10px 10px 40px -32px rgba(0,0,0,0.75);
+    padding: 1rem;
+}
+
+.princing-container:last-child {
+    margin-bottom: 15vh;
+}
+
+.intro-pricing-container {
+    text-align: center;
+}
+
+.title-plan {
+    font-size: 1.35rem;
+}
+
+.pricing-plan {
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.mounth {
+    font-size: .65rem;
+    color: #a7a7a7;
+}
+
+.list-spef {
+    list-style: none;
+}
+
+.spef-text {
+    font-size: .75rem;
+    color: #a7a7a7;
+    margin-trim: 2%;
+    text-align: initial;
+}
+
+.spef-text:before {
+    content: '✅';
+}
+
+@media (min-width:1050px) {
+
+    .title-pricing {
+        font-size: 2.5rem;
+    }
+
+    .sub-title-pricing {
+        font-size: 1.25rem;
+    }
+
+    .grid-pricing-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .princing-container {
+        height: 60vh;
+    }
+
+    .spef-text {
+        margin-top: .4rem;
+        font-size: .95rem;
+    }
+
+    .princing-container:last-child {
+        margin: 0;
+    }
+}
